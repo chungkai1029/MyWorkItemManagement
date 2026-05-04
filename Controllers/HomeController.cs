@@ -1,8 +1,8 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using MyWorkItem.Models;
+using MyWorkItemManagement.Models;
 
-namespace MyWorkItem.Controllers;
+namespace MyWorkItemManagement.Controllers;
 
 public class HomeController : Controller
 {

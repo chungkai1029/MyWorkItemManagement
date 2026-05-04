@@ -4,7 +4,7 @@
 
 #pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
 
-namespace MyWorkItem.Migrations
+namespace MyWorkItemManagement.Migrations
 {
     /// <inheritdoc />
     public partial class InitialCreate : Migration

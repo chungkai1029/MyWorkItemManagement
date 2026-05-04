@@ -1,4 +1,4 @@
-namespace MyWorkItem.Models;
+namespace MyWorkItemManagement.Models;
 
 public class ErrorViewModel
 {

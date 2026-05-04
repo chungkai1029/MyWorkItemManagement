@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using MyWorkItem.Models;
+using MyWorkItemManagement.Models;
 
-namespace MyWorkItem.Data
+namespace MyWorkItemManagement.Data
 {
     public class AppDbContext : DbContext
     {

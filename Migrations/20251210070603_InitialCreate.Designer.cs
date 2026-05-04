@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using MyWorkItem.Data;
+using MyWorkItemManagement.Data;
 
 #nullable disable
 
-namespace MyWorkItem.Migrations
+namespace MyWorkItemManagement.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     [Migration("20251210070603_InitialCreate")]
@@ -24,7 +24,7 @@ namespace MyWorkItem.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("MyWorkItem.Models.Role", b =>
+            modelBuilder.Entity("MyWorkItemManagement.Models.Role", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
