@@ -403,3 +403,41 @@ FodyWeavers.xsd
 # Additional files built by Visual Studio
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudio
+
+# Local agent tooling
+.agent/
+.amazonq/
+.augment/
+.claude/
+.cline/
+.clinerules/
+.codebuddy/
+.codex/
+.continue/
+.cospec/
+.crush/
+.cursor/
+.factory/
+.gemini/
+.iflow/
+.kilocode/
+.kiro/
+.opencode/
+.pi/
+.qoder/
+.qwen/
+.roo/
+.trae/
+.windsurf/
+
+# AI Agent Context
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+
+# GitHub metadata (ignore current subfolders, keep workflows for future)
+.github/*
+!.github/workflows/
+
+# Generated specs
+openspec/
