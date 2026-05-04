@@ -12,9 +12,9 @@ namespace MyWorkItemManagement.Models
 
         [Column("Token")]
         public string TokenValue { get; set; }
-        public DateTime CreateAt { get; set; }
-        public DateTime ExpiredAt { get; set; }
-        public bool IsLogout { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public DateTime ExpiresAt { get; set; }
+        public bool IsLoggedOut { get; set; }
 
         [ForeignKey(nameof(UserId))]
         public User User { get; set; }
