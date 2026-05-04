@@ -16,7 +16,7 @@ namespace MyWorkItemManagement.Models
         [ForeignKey(nameof(RoleId))]
         public Role Role { get; set; }
 
-        public ICollection<UserWorkItemStatus> UserWorkItemStatuses { get; set; }
-        public ICollection<Token> Tokens { get; set; }
+        public ICollection<UserWorkItemStatus> UserWorkItemStatuses { get; set; } = new HashSet<UserWorkItemStatus>();
+        public ICollection<Token> Tokens { get; set; } = new HashSet<Token>();
     }
 }

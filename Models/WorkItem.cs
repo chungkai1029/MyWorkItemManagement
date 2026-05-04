@@ -11,6 +11,6 @@ namespace MyWorkItemManagement.Models
         public string Title { get; set; }
         public string? Description { get; set; }
 
-        public ICollection<UserWorkItemStatus> UserWorkItemStatuses { get; set; }
+        public ICollection<UserWorkItemStatus> UserWorkItemStatuses { get; set; } = new HashSet<UserWorkItemStatus>();
     }
 }
