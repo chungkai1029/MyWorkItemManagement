@@ -34,6 +34,10 @@ namespace MyWorkItemManagement.Migrations
                     { 1, "Admin" },
                     { 2, "User" }
                 });
+
+            // Advance the identity sequence past the explicitly-seeded ids so
+            // subsequent inserts don't collide with them.
+            migrationBuilder.Sql("SELECT setval(pg_get_serial_sequence('roles', 'id'), (SELECT MAX(id) FROM roles));");
         }
 
         /// <inheritdoc />
