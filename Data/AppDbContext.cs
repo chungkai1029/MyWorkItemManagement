@@ -29,6 +29,10 @@ namespace MyWorkItemManagement.Data
                 .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<Token>()
+                .Property(t => t.TokenValue)
+                .HasColumnName("token");
+
+            modelBuilder.Entity<Token>()
                 .HasOne(t => t.User)
                 .WithMany(u => u.Tokens)
                 .HasForeignKey(t => t.UserId)

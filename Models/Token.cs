@@ -10,7 +10,6 @@ namespace MyWorkItemManagement.Models
         public int Id { get; set; }
         public int UserId { get; set; }
 
-        [Column("Token")]
         public string TokenValue { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime ExpiresAt { get; set; }
