@@ -78,7 +78,7 @@ namespace MyWorkItemManagement.Migrations
                     b.Property<string>("TokenValue")
                         .IsRequired()
                         .HasColumnType("text")
-                        .HasColumnName("Token");
+                        .HasColumnName("token");
 
                     b.Property<int>("UserId")
                         .HasColumnType("integer")

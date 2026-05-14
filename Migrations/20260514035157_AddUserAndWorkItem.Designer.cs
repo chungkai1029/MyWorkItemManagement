@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace MyWorkItemManagement.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260514032237_AddUserAndWorkItem")]
+    [Migration("20260514035157_AddUserAndWorkItem")]
     partial class AddUserAndWorkItem
     {
         /// <inheritdoc />
@@ -81,7 +81,7 @@ namespace MyWorkItemManagement.Migrations
                     b.Property<string>("TokenValue")
                         .IsRequired()
                         .HasColumnType("text")
-                        .HasColumnName("Token");
+                        .HasColumnName("token");
 
                     b.Property<int>("UserId")
                         .HasColumnType("integer")

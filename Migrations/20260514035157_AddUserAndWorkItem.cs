@@ -55,7 +55,7 @@ namespace MyWorkItemManagement.Migrations
                     id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     user_id = table.Column<int>(type: "integer", nullable: false),
-                    Token = table.Column<string>(type: "text", nullable: false),
+                    token = table.Column<string>(type: "text", nullable: false),
                     created_at = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     expires_at = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     is_logged_out = table.Column<bool>(type: "boolean", nullable: false)
